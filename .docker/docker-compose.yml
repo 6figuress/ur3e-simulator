@@ -8,6 +8,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $XAUTHORITY:/root/.Xauthority
+      - ../test:/root/ws_moveit/src/moveit2_tutorials/iscoin_driver/examples/testDir/
     environment:
       QT_X11_NO_MITSHM: 1
       DISPLAY: $DISPLAY
@@ -27,6 +28,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $XAUTHORITY:/root/.Xauthority
+      - ../test:/root/ws_moveit/src/moveit2_tutorials/iscoin_driver/examples/testDir/
     environment:
       QT_X11_NO_MITSHM: 1
       DISPLAY: $DISPLAY
